@@ -1,25 +1,54 @@
-.body {
-  background: linear-gradient(to bottom, #00A099, #00538F);
-  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  padding: 40px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.header {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, hsla(177, 100%, 31%, 0.466), hsla(205, 100%, 28%, 0.336)), url(./static/hands.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
 
 /* NAVIGATION */
 
-.navbar {
-  /* margin: 20px; */
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: linear-gradient(to left, #00A099, #00538F);    
-  background: linear-gradient(to bottom, #00538F,#00A099);
-  }
+.navbar{
+  padding: 10px 50px 0 30px;
+  background: linear-gradient(to left, hsla(177, 100%, 31%, 0.705), hsla(205, 100%, 28%, 0.719));    
+  background: linear-gradient(to bottom, hsl(205, 100%, 28%),hsla(177, 100%, 31%, 0.541));
+  font-family: 'Myriad Pro', sans-serif; 
+}
+
+.navbar > a {
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: right;
+  
+}
+
+.navbar > a:hover {
+  text-decoration: underline;
+}
 
 .biorigen {
-  /* text-shadow: black 6px 6px 6px; */
   color: #00538F;
   -webkit-text-stroke: 0.6px black;
-  text-shadow: -1px -1px #00A099, 1.5px 1.5px #00538F
+  text-shadow: -1px -1px #00A099, 1.5px 1.5px #00538F;
+  font-size: 1.5rem;
 }
 
 .biorigen span{
@@ -27,69 +56,134 @@
   font-family: 'Myriad Pro', sans-serif;                                                
 }
 
-
-.navbar button {
-  background-color: #00A099;
-  border-color: black;
-}
-.navbar a:hover, a:focus {
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
-  background-size: 100% 2px;
-}
-
-
 .logo {
   width: 45px;
   height: auto;
   border-radius: 90%;
 }
 
-/* BODY */
+/* HEADER */
+
+.header h1 {
+  display: flex;
+  height: 130px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #00538F;
+  -webkit-text-stroke: 0.6px black;
+  text-shadow: -1px -1px #00A099, 1.5px 1.5px #00538F;
+  font-size: 7rem;
+  padding-top: 180px;
+}
+
+.biorigen-title span{
+  color: #00A099;
+  font-family: 'Myriad Pro', sans-serif;                                                
+}
+
+.header h4{
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 350;
+  padding-top: 60px;
+}
+
+.waveButton {
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.waveButton svg {
+  height: 100%; width: 100%
+}
+.waveButton path {
+  stroke: none; 
+  fill: hsla(205, 100%, 28%, 0.432);
+}
+
+
+/* MAIN */
+
+main {
+  background: linear-gradient(to left, hsla(177, 100%, 31%, 0.356), hsla(205, 100%, 28%, 0.288));    
+  background: linear-gradient(to bottom, hsla(205, 100%, 28%, 0.568),hsla(177, 100%, 31%, 0.24));
+}
+
+.subTitle {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Myriad Pro', sans-serif;
+}
+
 
 .parraf1 {
-  margin: 20px;
-  margin-top: 80px;
-  width: 600px;
-  /* border: 1px solid black; */
-  text-align: center;
-  float: left;
-
-
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 60px;
+  font-family: 'Myriad Pro', sans-serif;
 }
 
 .parraf2 {
-  margin: 20px;
-  width: 600px; 
-  /* border: 1px solid black; */
-  text-align: center;
-  float: right;
-} 
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 60px;
+  font-family: 'Myriad Pro', sans-serif;
+}
 
 .logo1 {
   width: 200px;
   height: auto;
-  float: right;
   margin-right: 250px;
-  padding-top: 25px;
+  padding-top: 20px;
+  border-style: solid;
 }
 
 .logo2 {
   width: 200px;
-  height: auto; 
-  /* float: left; */
+  height: auto;
   margin-left: 250px;
   padding-bottom: 20px;
+  border-style: solid;
 }
-
-.line {
+/* .line {
   color: black;
   size: 2px;
+} */
+
+/* UBICATION */
+
+.ubication {
+  background: linear-gradient(to left, hsla(177, 100%, 31%, 0.158), hsla(205, 100%, 28%, 0.158));    
+  background: linear-gradient(to top, hsla(205, 100%, 28%, 0.678),hsla(177, 100%, 31%, 0.24));
 }
+
+.text-ubication {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Myriad Pro', sans-serif;
+}
+.googleMap {
+  border: 0;
+  display: flex;
+  height: 250px;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin-left: 450px;
+}
+
+/* Social Networks */
 
 .btn-wsp {
   width: 80px;
@@ -100,26 +194,21 @@
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: #0df053;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 
 .btn-wsp:hover {
   text-decoration: none;
   color: #0df053;
-  background: #fff;
+  background: #0df053;
 }
-
-
-/* Social Networks */
 .social-container {
   background: linear-gradient(to left,#00538F, #00A099);
-  background: linear-gradient(to top, #00A099,#00538F);
+  background: linear-gradient(to top, #00A099,#00538f9d);
   padding: auto;
 }
 
@@ -142,8 +231,8 @@ a.instagram {
 }
 
 .footer {
-  position:absolute;
-  bottom:0;
+  background: linear-gradient(to left, hsla(177, 100%, 31%, 0.158), hsla(205, 100%, 28%, 0.158));    
+  background: linear-gradient(to top, hsla(205, 100%, 28%, 0.678),hsla(177, 100%, 31%, 0.24));
   width:100%;
   height:70px; 
   text-align: center;
