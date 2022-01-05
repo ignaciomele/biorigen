@@ -20,12 +20,12 @@ export default class Articles extends Component {
                 <main>
                     <section className="container">
                         <h2 className="subTitle">¿Qué es Biorigen?</h2>
-                        <div className="parraf1">
+                        <div className="paragraph1">
                             <p>Somos un equipo de Profesionales de la Salud que trabajamos inter y trans disciplinariamente, para lograr mejorar el estado de salud de los consultantes e intentar revertir el estado de desequilibrio en que se puede encontrar un paciente.</p>
                         </div>
                             <hr />
                         <h2 className="subTitle">¿Cómo trabajamos?</h2>
-                        <div className="parraf2">
+                        <div className="paragrapf2">
                             <p>Nuestro principal objetivo se centra en proporcionar educación para que la población aprenda conceptos importantísimos de como funciona nuestro cuerpo y mente, para que podamos mantenernos en salud o intentar conseguirla si ya la perdimos. Queremos una especie humana mas fuerte de lo que es ahora, debilitada por su forma de vida, el sedentarismo, malos habitos alimenticios, posturales, etc.</p>
                         </div>
                 {/* <div className="logo1">

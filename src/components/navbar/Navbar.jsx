@@ -16,7 +16,7 @@ export default class Navbar extends Component {
                             <Link className='navbar-btn' to={"/terapias"}>Terapias</Link>
                             <Link className='navbar-btn' to={"/profesionales"}>Profesionales</Link>
                             <Link className='navbar-btn' to={"/turnos"}>Turnos</Link>
-                            <Link className='navbar-btn' to={"/fq"}>preguntas frecuentes</Link>
+                            <Link className='navbar-btn' to={"/fq"}>Preguntas frecuentes</Link>
                             <Link className='navbar-btn' to={"/terapias"}></Link>
                             
                             <input type="search" className="search" placeholder="Buscar..."/>
