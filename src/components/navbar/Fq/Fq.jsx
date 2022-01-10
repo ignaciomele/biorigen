@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Navbar from '../../../components/navbar/Navbar'
 import SocialFollow from '../../../components/socialFollow/SocialFollow'
 
-
 export default class Fq extends Component {
     render() {
         return (
@@ -15,6 +14,10 @@ export default class Fq extends Component {
                 <h3>¿Con qué terapias trabajan?</h3>
                 <h3>¿Cómo encuentro al profesional que estoy buscando?</h3>
                 <h3>¿Tienen redes sociales?</h3>
+
+                <section>
+
+                </section>
             </div>
         )
     }
