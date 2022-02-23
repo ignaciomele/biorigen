@@ -8,8 +8,8 @@ const BiorigenLikes = () => {
     const [count, increment, decrement, reset] = useCounter(0, 1)
 
     useEffect(() => {
-        console.log(count)
-    }, [increment])
+        console.log('count changed to:', count)
+    }, [count])
 
     return(
         <div>
