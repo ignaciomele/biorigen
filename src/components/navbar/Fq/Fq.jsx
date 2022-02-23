@@ -1,21 +1,29 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useEffect } from 'react'
+import useCounter from '../../../hooks/useCounter'
 import Navbar from '../../../components/navbar/Navbar'
 import SocialFollow from '../../../components/socialFollow/SocialFollow'
 
 
-export default function BiorigenLikes() {
-    const [count, setCount] = useState(0)
+const BiorigenLikes = () => {
+    const [count, increment, decrement, reset] = useCounter(0, 1)
+
+    useEffect(() => {
+        console.log(count)
+    }, [increment])
 
     return(
         <div>
-            Likes: {count}
+            <Navbar/>
+            <h2>Likes: {count}</h2>            
             <br />
-            <button onClick={() => setCount(count + 1)}> LIKE</button>
-            <button onClick={() => setCount(count - 1)}> UNLIKE</button>
+            <button onClick={increment}> LIKE</button>
+            <button onClick={decrement}> UNLIKE</button>
+            <button onClick={reset}> RESET</button>
         </div>
     )
 }
 
+export default BiorigenLikes
 
 
 
