@@ -10,7 +10,6 @@ export default class Professionals extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
                 <section className='section1'>
                     <h1>Profesionales</h1>
                     
@@ -191,8 +190,6 @@ export default class Professionals extends Component {
                         </div>
                     </div>                
                 </section>
-                
-                <SocialFollow/>
             </div>
         )
     }

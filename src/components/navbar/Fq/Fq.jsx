@@ -1,7 +1,5 @@
-import React, { Component, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import useCounter from '../../../hooks/useCounter'
-import Navbar from '../../../components/navbar/Navbar'
-import SocialFollow from '../../../components/socialFollow/SocialFollow'
 
 
 const BiorigenLikes = () => {
@@ -11,10 +9,9 @@ const BiorigenLikes = () => {
         console.log('count changed to:', count)
     }, [count])
 
-    return(
+    return (
         <div>
-            <Navbar/>
-            <h2>Likes: {count}</h2>            
+            <h2>Likes: {count}</h2>
             <br />
             <button onClick={increment}> LIKE</button>
             <button onClick={decrement}> UNLIKE</button>
