@@ -1,27 +1,16 @@
-import React, { Component } from 'react'
-import Navbar from '../navbar/Navbar'
-import SocialFollow from '../socialFollow/SocialFollow'
+import React, { Fragment } from 'react'
 import Articles from '../articles/Articles'
-import Ubication from '../ubication/Ubication'
+import Location from '../location/Location'
+import Turnos from '../navbar/turnos/Turnos'
 
-
-export default class Main extends Component {
-    render() {
-        return (
-            <div className="main">
-               <div>
-                   <Navbar/>
-               </div>
-               <div>
-                    <Articles/>
-               </div>
-               <div>
-                   <Ubication/>
-               </div>
-               <div className="footer">
-                    <SocialFollow />
-                </div>
-            </div>
-        )
-    }
+const Main = () => {
+  return (
+    <Fragment>
+        <Articles />
+        <Turnos/>
+        <Location />
+    </Fragment>
+  )
 }
+
+export default Main

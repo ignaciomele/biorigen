@@ -1,61 +1,28 @@
-import React, { Component, useEffect } from 'react'
-import useCounter from '../../../hooks/useCounter'
-import Navbar from '../../../components/navbar/Navbar'
-import SocialFollow from '../../../components/socialFollow/SocialFollow'
+import React, { Fragment, useEffect, useState } from "react";
+import mockupFaqs from '../../../mockupFaqs.json'
+import '../Fq/fq.css'
 
-
-const BiorigenLikes = () => {
-    const [count, increment, decrement, reset] = useCounter(0, 1)
+export default function Fq(){
+    const [faqsData, setDaqsData] = useState([])
 
     useEffect(() => {
-        console.log('count changed to:', count)
-    }, [count])
+        if (faqsData.faqs && faqsData.faqs.length) setDaqsData(() => faqsData.faqs.map(faqs => ({ ...faqs})))
+    }, [])
 
     return(
-        <div>
-            <Navbar/>
-            <h2>Likes: {count}</h2>            
-            <br />
-            <button onClick={increment}> LIKE</button>
-            <button onClick={decrement}> UNLIKE</button>
-            <button onClick={reset}> RESET</button>
-        </div>
+        <Fragment>
+            <div className="background-faqs">
+                <div className="main-faqs">
+                <h2 className="title-faqs">Preguntas Frecuentes</h2>
+                    {mockupFaqs.faqs.map(faqs => (
+                        <div key={faqs.id} className="body-faqs">
+                            <h3 className="title-mockup"><li>{faqs.title}</li></h3>
+                            <p className="paragraph-faqs">{faqs.body}</p>
+                        </div>
+                        )
+                    )}
+                </div>
+            </div>
+        </Fragment>
     )
 }
-
-export default BiorigenLikes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export default class Fq extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <Navbar/>
-//                 <h1>Preguntas Frecuentes</h1>
-//                 <h3>¿Cómo solicito un turno?</h3>
-//                 <h3>¿En qué horarios puedo solicitarlo?</h3>
-//                 <h3>¿Dónde estan ubicados?</h3>
-//                 <h3>¿Con qué terapias trabajan?</h3>
-//                 <h3>¿Cómo encuentro al profesional que estoy buscando?</h3>
-//                 <h3>¿Tienen redes sociales?</h3>
-
-//                 <section>
-
-//                 </section>
-//             </div>
-//         )
-//     }
-// }

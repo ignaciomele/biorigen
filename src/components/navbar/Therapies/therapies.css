@@ -20,6 +20,7 @@ h1 {
   color: hsla(177, 100%, 31%, 0.61);
   -webkit-text-stroke: 0.3px #00538F;
   text-shadow: -1px -1px #00A099, 1.5px 1.5px #00538F;
+  text-align: center;
 }
 
 .section1 {  
