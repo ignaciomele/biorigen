@@ -1,5 +1,6 @@
 .main-turnos {  
   background: linear-gradient(to top, hsla(205, 100%, 28%, 0.171),hsla(177, 100%, 31%, 0.24));
+  padding-top: 0;
 }
 
 .paragraph-turnos {

@@ -9,6 +9,7 @@
   text-align: center;
   margin-bottom: 20px;
   font-family: 'Myriad Pro', sans-serif;
+  box-shadow: 50px;
   }
   
 .body-faqs {
@@ -26,5 +27,5 @@
 }
 
 .background-faqs {
-  background: linear-gradient(to bottom, hsla(205, 100%, 28%, 0.568),hsla(177, 100%, 31%, 0.24));
+  background: linear-gradient(to top, hsla(205, 100%, 28%, 0.603),hsla(177, 100%, 31%, 0.521));
 }

@@ -14,6 +14,7 @@ export default function Turnos() {
                     rel="noopener noreferrer">https://walink.co/f8babd
                     </a>, y nosotros te guiaremos.</p>
                         <p className="paragraph1">Nuestros horarios de atención son de Lunes a Viernes de 08hs a 21hs y sábados de 08hs a 12hs.</p>
+                        <hr/>
                     </section>
                 </main>
         </Fragment>

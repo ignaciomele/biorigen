@@ -21,6 +21,7 @@ export default function Articles() {
                         <hr />
                         <h2 className="subTitle">¿Cómo trabajamos?</h2>
                         <p className="paragraph1">Nuestro principal objetivo se centra en proporcionar educación para que la población aprenda conceptos importantísimos de como funciona nuestro cuerpo y mente, para que podamos mantenernos en salud o intentar conseguirla si ya la perdimos. Queremos una especie humana mas fuerte de lo que es ahora, debilitada por su forma de vida, el sedentarismo, malos habitos alimenticios, posturales, etc.</p>
+                        <hr/>
                     </section>
                 </main>
             </Fragment>
